@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="701.0" stylesheets="@open-styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment2java.OpenController">
+   <ImageView AnchorPane.topAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.bottomAnchor="0.0">
+      <image>
+         <Image url="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000052/GSFC_20171208_Archive_e000052~orig.jpg"/>
+      </image>
+   </ImageView>
+   <BorderPane AnchorPane.topAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.bottomAnchor="30.0">
+      <top>
+         <ImageView fitHeight="166.0" fitWidth="200.0" BorderPane.alignment="CENTER">
+            <image>
+               <Image url="https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png" />
+            </image>
+         </ImageView>
+      </top>
+      <center>
+         <VBox alignment="CENTER" spacing="35">
+            <Text id="title" strokeType="OUTSIDE" strokeWidth="0.0" text="Astronomy Picture of the Day" textAlignment="CENTER" wrappingWidth="556.7050704956055">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Text>
+            <Text id="description" strokeType="OUTSIDE" strokeWidth="0.0" text="Pick a date by your choice." textAlignment="CENTER" wrappingWidth="219.8033447265625" />
+         </VBox>
+      </center>
+      <bottom>
+         <VBox alignment="CENTER" spacing="20">
+            <DatePicker fx:id="datePicker" />
+            <Button fx:id="searchBtn" mnemonicParsing="false" text="Search" textAlignment="CENTER" />
+         </VBox>
+      </bottom>
+   </BorderPane>
+</AnchorPane>

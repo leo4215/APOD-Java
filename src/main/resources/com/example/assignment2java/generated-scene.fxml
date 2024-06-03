@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.geometry.Insets?>
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="712.0" prefWidth="871.0" stylesheets="@generated-styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment2java.GeneratedController">
+   <ImageView>
+      <image>
+         <Image url="https://images-assets.nasa.gov/image/PIA07906/PIA07906~orig.jpg"/>
+      </image>
+   </ImageView>
+   <children>
+      <VBox alignment="CENTER" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="35.0" AnchorPane.bottomAnchor="200.0" spacing="20.0">
+         <children>
+            <Text fx:id="title" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="754.3333694934845">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="date" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="152.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER">
+               <padding>
+                  <Insets bottom="20.0"/>
+               </padding>
+               <ImageView fx:id="image" fitHeight="267.0" fitWidth="348.0" pickOnBounds="true" preserveRatio="true" />
+            </HBox>
+         </children>
+      </VBox>
+      <VBox alignment="BOTTOM_CENTER" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="42.0" AnchorPane.bottomAnchor="30.0" spacing="27.0">
+         <children>
+            <Text fx:id="explanation" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="788.1367740631104">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Button fx:id="resetBtn" mnemonicParsing="false" text="Reset" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
